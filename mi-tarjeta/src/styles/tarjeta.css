@@ -1,0 +1,153 @@
+:root {
+    --background: #d7d7f7;
+    --gray: #EAEAEC;
+    --primary: #29283F;
+    --primary-color: #b6ace6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--background);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 16px;
+    padding: 1.5rem;
+    font-family: Poppins, sans-serif;
+
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: hidden;
+    max-width: clamp(320px, 70vw, 740px);
+    min-width: 20rem;
+    min-height: 17.5rem
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 
+        0px 5px 15px;
+}
+
+
+.background {
+    flex: 1 1 15rem;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    flex: 3 1 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1rem;
+    color: var(--primary);
+}
+
+.content > h2 {
+    font-size: clamp(
+        1.3rem, 2.5vw, 
+        1.8rem);
+    font-weight: 700;
+    margin-bottom: clamp(
+        0.35rem, 2vw, 
+        0.55rem
+    );
+}
+
+.content > h3 {
+    font-size: clamp(
+        1.15rem, 2.25vw, 
+        1.3rem);
+    font-weight: 700;
+    margin-bottom: clamp(
+        0.35rem, 2vw, 
+        0.55rem
+    );
+    color: rgb(144, 111, 236)
+}
+
+.content > p {
+    font-size: clamp(1rem, 
+        1.75vw, 1.1rem);
+    font-weight: 400;
+    margin: 0.4rem 0;
+}
+
+.content > p:not(:first-of-type){
+    color: rgb(103, 50, 248);
+}
+    
+
+.content a{
+    color: var(--primary-color);
+}
+
+.chips {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    list-style-type: none;  
+    padding: 0.75rem 0px 1rem 0px;
+}
+
+.chips > li {
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9375rem;
+    background-color: var(--gray);
+    transition: all 0.3s;
+    font-weight: 500;
+
+}
+
+.chips > li:hover{
+    background-color: var(--primary-color);
+    color: var(--gray);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+
+}
+
+.social-icons li{
+    list-style-type: none;
+}
+
+.social-icons li a{
+    position: relative;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.social-icons li a{
+    font-size:2.5rem;
+    color: #5a3e8dc0;
+}
+
+.social-icons li a:hover{
+    transition: 1.2s;
+    transform: rotateY(360deg);
+}
