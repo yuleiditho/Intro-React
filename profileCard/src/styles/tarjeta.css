@@ -31,9 +31,9 @@ body {
     cursor: pointer;
     transition: all 0.3s;
     overflow: hidden;
-    max-width: clamp(320px, 70vw, 740px);
-    min-width: 20rem;
-    min-height: 17.5rem
+    max-width: clamp(600px, 80vw, 900px);
+    min-width: 23rem;
+    min-height: 20rem
 }
 
 .card:hover {
@@ -57,7 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 1rem;
+    padding: 1.5rem;
     color: var(--primary);
 }
 
@@ -67,8 +67,8 @@ body {
         1.8rem);
     font-weight: 700;
     margin-bottom: clamp(
-        0.35rem, 2vw, 
-        0.55rem
+        0.8rem, 2vw, 
+        0.8rem
     );
 }
 
@@ -78,8 +78,8 @@ body {
         1.3rem);
     font-weight: 700;
     margin-bottom: clamp(
-        0.35rem, 2vw, 
-        0.55rem
+        0.8rem, 2vw, 
+        0.8rem
     );
     color: rgb(144, 111, 236)
 }
@@ -88,7 +88,7 @@ body {
     font-size: clamp(1rem, 
         1.75vw, 1.1rem);
     font-weight: 400;
-    margin: 0.4rem 0;
+    margin: 0.8rem 0;
 }
 
 .content > p:not(:first-of-type){
@@ -102,15 +102,14 @@ body {
 
 .chips {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
     list-style-type: none;  
-    padding: 0.75rem 0px 1rem 0px;
 }
 
 .chips > li {
     border-radius: 0.5rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.8rem;
     font-size: 0.9375rem;
     background-color: var(--gray);
     transition: all 0.3s;
@@ -123,11 +122,17 @@ body {
     color: var(--gray);
 }
 
+.chips span{
+    position: relative;
+    top: 0.2rem;
+    font-size: 1.2rem;
+}
+
 .social-icons {
     display: flex;
-    justify-content: flex-start;
-    margin-top: 0.5rem;
-
+    justify-content: flex-end;
+    margin-top: auto;
+    padding: 0.5rem;
 }
 
 .social-icons li{

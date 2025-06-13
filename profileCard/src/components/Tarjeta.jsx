@@ -1,7 +1,8 @@
 import React from "react";
 import '../styles/tarjeta.css'
 import imgProfile from '../assets/profile.png'
-import { FaGithub } from "react-icons/fa";
+import { FaCss3, FaGithub, FaHtml5, FaJs, FaJsSquare, FaLinkedinIn, FaReact } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa6";
 
 function Tarjeta() {
   const nombre = "Yuleidith Denisse Oliva Reyes";
@@ -17,12 +18,14 @@ function Tarjeta() {
             <p>{mensaje}</p>
             <p>Skills:</p>
             <ul class="chips">
-                <li>React</li>
-                <li>HTML, CSS</li>
-                <li>JavaScript</li>
+                <li>React <span><FaReact/></span></li>
+                <li>HTML <span><FaHtml5/></span></li>
+                <li>CSS <span><FaCss3Alt/></span></li>
+                <li>JavaScript <span><FaJsSquare/></span></li>
             </ul>
             <ul className="social-icons">
                 <li><a href="https://github.com/yuleiditho" target="_blank"><FaGithub/></a></li>
+              
             </ul>
         </div>
         
