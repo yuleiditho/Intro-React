@@ -3,9 +3,13 @@
     --second-color: #d2ebcd; 
     --third-color: #ff7f5b; 
     --fourth-color: #393939; 
-    --orange: #f5bd88f1;
-    --orange-option: #eec48d3f;
+    --orange: #eebb8bf1;
+    --orange-option: #f1ca8f56;
     --dark-red: rgb(226, 29, 29);
+    --light-gray:rgb(83, 82, 89);
+    --nw-white:rgb(231, 230, 235);
+    --color-checkbox: rgb(238, 152, 53);
+    --background: rgb(26, 25, 33);
 }
 
 
@@ -124,17 +128,38 @@ picture{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1.5rem; 
     background-color: var(--orange-option);
     border-radius: 6px;
     color: var(--fourth-color);
     font-weight: 700;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     font-size: 1.2rem;
+    gap: 1.8rem; 
 }
 
 
-.btn-delete{
+.cnt-row li > input[type="checkbox"] {
+    margin-right: 1.2rem; 
+    flex-shrink: 0; 
+}
+
+
+.cnt-row li > .btn-delete {
+    margin-left: auto; 
+    flex-shrink: 0; 
+}
+
+.cnt-row li span {
+  transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+
+.cnt-row li .checked {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.btn-delete {
     background: none;
     border: none;
     cursor: pointer;
@@ -161,6 +186,48 @@ picture{
 
 .btn-added, .btn-delete {
     -webkit-tap-highlight-color: transparent; 
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: transparent;
+    height: 1.15rem;
+    width: 1.15rem;
+    border: 2px solid var(--light-gray);
+    color: var(--nw-white);
+    position: relative;
+    border-radius: 3px;
+}
+  
+input[type='checkbox']:hover {
+    border: 2px solid var(--color-checkbox);
+}
+  
+input[type="checkbox"]:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -60%) rotate(45deg); 
+    display: none;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+  
+input[type='checkbox']:checked {
+    background: var(--color-checkbox);
+    color: var(--background);
+    border: none;
 }
 
 @media (max-width: 600px) {
@@ -200,3 +267,4 @@ picture{
         font-size: 1rem;
     }
 }
+
