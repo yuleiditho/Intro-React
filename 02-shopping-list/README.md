@@ -2,7 +2,7 @@
 
 Componente React para gestionar una lista de compras básica.
 
-![Landing page](./src/assets/landing.png)
+![Landing page](./src/assets/landing2.png)
 
 ## React Hooks: `useState`
 
