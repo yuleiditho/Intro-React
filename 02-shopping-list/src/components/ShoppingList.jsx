@@ -8,23 +8,39 @@ function ShoppingList() {
   //Función para agregar un nuevo producto a la lista
   const addProduct = () => {
     if (newProduct.trim() !== "") {
-      setProducts([...products, newProduct]);
+      setProducts([...products, { name: newProduct, checked: false }]);
       setNewProduct("");
     }
   };
 
   //Función para eliminar un producto de la lista
   const deleteProduct = (item) => {
-    setProducts(
-      products.filter((product) => product.toLowerCase() !== item.toLowerCase())
-    );
+    const confirmAlert = window.confirm(`¿Desea eliminar "${item.name}"?`);
+    if (confirmAlert) {
+      setProducts(
+        products.filter(
+          (product) => product.name.toLowerCase() !== item.name.toLowerCase()
+        )
+      );
+      window.alert(`"${item.name}" fue eliminado`);
+    }
   };
 
-  const handleKeyDown = (e) =>{
-    if(e.key === "Enter"){
-        addProduct();
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      addProduct();
     }
-  }
+  };
+
+  const toggleCheck = (item) => {
+    setProducts(
+      products.map((product) =>
+        product.name === item.name
+          ? { ...product, checked: !product.checked }
+          : product
+      )
+    );
+  };
 
   return (
     <section className="container">
@@ -38,7 +54,7 @@ function ShoppingList() {
           onKeyDown={handleKeyDown}
           className="input-item"
           placeholder="Escribe un producto"
-
+          required
         />
         <button className="btn-added" onClick={addProduct}>
           Agregar
@@ -50,8 +66,19 @@ function ShoppingList() {
           {products.length > 0 ? (
             products.map((item, index) => (
               <li key={index}>
-                {item}
-                <button className="btn-delete" onClick={() => deleteProduct(item)}><RiDeleteBin2Line /></button>
+                <input
+                  type="checkbox"
+                  checked={item.checked}
+                  onChange={() => toggleCheck(item)}
+                />
+                <span className={item.checked ? "checked" : ""}>
+                  {item.name}
+                </span>
+
+                <RiDeleteBin2Line
+                  className="btn-delete"
+                  onClick={() => deleteProduct(item)}
+                />
               </li>
             ))
           ) : (
