@@ -17,15 +17,17 @@ function Form() {
 
   const filteredTasks = useMemo(() => {
     return tasks.filter((task) => {
-      switch(filter){
+      switch (filter) {
         case "short":
           return task.time < 30;
         case "medium":
           return task.time >= 30 && task.time <= 60;
         case "long":
           return task.time > 60;
+        case "all":
+        default:
+          return true;
       }
-      return true;
     });
   }, [tasks, filter]);
 
