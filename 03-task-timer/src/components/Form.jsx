@@ -17,9 +17,14 @@ function Form() {
 
   const filteredTasks = useMemo(() => {
     return tasks.filter((task) => {
-      if (filter === "short") return task.time < 30;
-      if (filter === "medium") return task.time >= 30 && task.time <= 60;
-      if (filter === "long") return task.time > 60;
+      switch(filter){
+        case "short":
+          return task.time < 30;
+        case "medium":
+          return task.time >= 30 && task.time <= 60;
+        case "long":
+          return task.time > 60;
+      }
       return true;
     });
   }, [tasks, filter]);
