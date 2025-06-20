@@ -2,7 +2,7 @@
 
 ![Landing page](./src/assets/landing.png)
 
-Una aplicación para gestionar tareas, construida con React + Vite y diseñada para demostrar el uso de Hooks como `useState`, `useEffect` y `useMemo`. 
+Una aplicación para gestionar tareas, construida con **React + Vite** y diseñada para demostrar el uso de Hooks como `useState`, `useEffect` y `useMemo`. 
 
 ## Características  
 
