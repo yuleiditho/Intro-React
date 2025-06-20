@@ -162,6 +162,15 @@ body {
   font-size: clamp(1rem, 3.5vw, 1.1rem);
 }
 
+.empty-message {
+    color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #f3e8ff, #eee4f8);
+    font-weight: 700;
+}
+
 @media (max-width: 768px) {
   .inputContainer {
     flex-wrap: wrap;

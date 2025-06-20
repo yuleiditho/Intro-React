@@ -90,13 +90,18 @@ function Form() {
       </div>
 
       <h2>Tareas ({filteredTasks.length})</h2>
+
       <ul className="taskList">
-        {filteredTasks.map((task, index) => (
-          <li key={index} className="taskCard">
-            <span className="taskName">{task.nombre} </span>
-            <span className="taskDuration">{task.time} minutos</span>
-          </li>
-        ))}
+        {filteredTasks.length > 0 ? (
+          filteredTasks.map((task, index) => (
+            <li key={index} className="taskCard">
+              <span className="taskName">{task.nombre} </span>
+              <span className="taskDuration">{task.time} minutos</span>
+            </li>
+          ))
+        ) : (
+          <p className="taskCard empty-message">No hay tareas aún</p>
+        )}
       </ul>
 
       <h3 className="totalDisplay">
