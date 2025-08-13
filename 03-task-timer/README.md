@@ -9,7 +9,7 @@ Una aplicación para gestionar tareas, construida con **React + Vite** y diseña
 - **Almacenamiento persistente**: Las tareas se guardan en `localStorage` usando `useEffect`.  
 - **Optimización de rendimiento**:  
   - Filtrado de tareas con `useMemo`.  
-  - Tiempo total memoizado para evitar cálculos innecesarios.  
+  - Tiempo total memorizado para evitar cálculos innecesarios.  
 - **Interfaz dinámica**:  
   - El título del documento se actualiza con el tiempo total.  
  
