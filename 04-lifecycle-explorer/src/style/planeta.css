@@ -1,0 +1,24 @@
+.planeta-item {
+    font-weight: 500;
+    background: rgba(72, 105, 110, 0.15);
+    color: white;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(25, 149, 153, 0.08);
+    margin-bottom: 0.5rem;
+}
+
+.planeta-item.resaltado-activo {
+  background-color: rgba(226, 218, 145, 0.651); 
+  border: 1px solid #FFEE58; 
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 238, 88, 0.4); 
+  transition: all 0.3s ease;
+}
+
+@keyframes resaltar {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
