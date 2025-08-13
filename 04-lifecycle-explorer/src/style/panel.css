@@ -1,0 +1,197 @@
+.panel-card {
+    width: 400px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    background: rgba(10, 20, 30, 0.65);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    position: relative;
+}
+
+.fuel-alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(200, 50, 50, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    z-index: 100;
+    text-align: center;
+    padding: 1rem;
+    animation: pulse 2s infinite;
+}
+
+.fuel-alert p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.alert-icon {
+    font-size: 2rem !important;
+    color: white !important;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+.panel-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.25rem;
+}
+
+.panel-icon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    color: hsl(263, 59%, 77%);
+    vertical-align: middle;
+}
+
+.panel-divider {
+    height: 2px;
+    background-color: #90caf9;
+    margin: 1rem 0;
+}
+
+.panel-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.fuel-icon {
+    color: #ffb300;
+}
+
+.fuel-value {
+    color: #ffb300;
+    font-weight: bold;
+}
+
+.planet-icon {
+    color: #199599;
+}
+
+.planet-value {
+    color: #199599;
+}
+
+.status-icon {
+    color: #90caf9;
+}
+
+.status-value {
+    color: #90caf9;
+    font-weight: bold;
+}
+
+.distance-value {
+    color: #cdaaee;
+    font-weight: bold;
+}
+
+.panel-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.panel-button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.despegar-button {
+    background-color: #84a1df;
+    color: white;
+}
+
+.despegar-button:hover {
+    background-color: #3b63d3;
+    box-shadow: 0 0 10px rgba(13, 21, 134, 0.5);
+}
+
+.aterrizar-button {
+    background-color: #bc97ff;
+    color: white;
+}
+
+.aterrizar-button:hover {
+    background-color: #875af0;
+    box-shadow: 0 0 10px rgba(39, 110, 176, 0.5);
+}
+
+.planetas-section {
+    margin-top: 1.5rem;
+}
+
+.planetas-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.planetas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.planeta-destacado {
+  background-color: rgba(142, 238, 145, 0.932); 
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+
+.contador-visitas {
+  font-size: 0.8em;
+  color: #666;
+  margin-left: 5px;
+}
+
+.planeta-item.repetido {
+  opacity: 0.8;
+  position: relative;
+}
+
+.planeta-item.repetido::after {
+  content: "✓";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #4CAF50;
+  font-weight: bold;
+}
