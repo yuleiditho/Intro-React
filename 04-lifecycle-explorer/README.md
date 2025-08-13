@@ -37,10 +37,6 @@ El panel proporciona una interfaz para controlar la nave espacial con:
   - Función de despegue (reanuda el vuelo)
   - Sistema automático de recarga de combustible
 
-- **Registro de actividad**:
-  - Muestra los planetas visitados durante la sesión
-  - Mantiene un historial de visitas
-
 ## Tecnologías utilizadas
 
 - `Material-UI` para iconos y componentes básicos
