@@ -1,6 +1,6 @@
 # Explorador Espacial - LifeCycle React
 
-![Landing page](./src/assets/demo.gif)
+![Landing page](./src/assets/previo.gif)
 ![Landing page](./src/assets/previo2.gif)
 
 Un proyecto interactivo que simula la exploración de planetas, con sistema de bitácora y panel de control.
