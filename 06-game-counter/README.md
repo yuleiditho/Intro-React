@@ -8,14 +8,11 @@ CounterGame es una aplicación web interactiva construida con React y Vite que p
 - **Funcionalidad de deshacer y rehacer**: Navega a través del historial de cambios del contador.
 - **Reinicio**: Vuelve el contador a su valor inicial (0).
 - **Borrado de historial**: Elimina el historial de cambios manteniendo el valor actual del contador.
-- **Interfaz amigable**: Diseño limpio y responsive con botones de colores llamativos.
+
 ## Tecnologías Utilizadas
-- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
-- **Vite**: Herramienta de construcción y desarrollo para proyectos frontend.
 - **useReducer**: Hook de React para manejar estados complejos del contador y su historial.
 - **useCallback**: Hook de React para optimizar funciones y evitar re-renderizados innecesarios.
 - **useRef**: Hook de React para interactuar con elementos del DOM (enfoque en botones e inputs).
-- **CSS3**: Estilos con colores llamativos, sombras y diseño responsive.
 
 ## Uso
 1. **Valor personalizado**: Ingresa un número en el campo de entrada para definir el valor de incremento/decremento.
