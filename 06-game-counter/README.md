@@ -1,7 +1,7 @@
 # CounterGame
 CounterGame es una aplicación web interactiva construida con React y Vite que permite a los usuarios realizar operaciones de contador con un valor personalizado, deshacer/rehacer acciones, reiniciar el contador y borrar el historial.
 
-![Landing](https://postimg.cc/Fk4fBs2Q)
+[![landing.png](https://i.postimg.cc/HnJQjrzj/landing.png)](https://postimg.cc/Fk4fBs2Q)
 
 ## Características
 - **Incremento y decremento personalizado**: Permite especificar un valor numérico para incrementar o decrementar el contador.
