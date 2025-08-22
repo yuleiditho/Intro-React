@@ -1,12 +1,25 @@
-# React + Vite
+# CounterGame
+CounterGame es una aplicación web interactiva construida con React y Vite que permite a los usuarios realizar operaciones de contador con un valor personalizado, deshacer/rehacer acciones, reiniciar el contador y borrar el historial.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Landing](https://postimg.cc/Fk4fBs2Q)
 
-Currently, two official plugins are available:
+## Características
+- **Incremento y decremento personalizado**: Permite especificar un valor numérico para incrementar o decrementar el contador.
+- **Funcionalidad de deshacer y rehacer**: Navega a través del historial de cambios del contador.
+- **Reinicio**: Vuelve el contador a su valor inicial (0).
+- **Borrado de historial**: Elimina el historial de cambios manteniendo el valor actual del contador.
+- **Interfaz amigable**: Diseño limpio y responsive con botones de colores llamativos.
+## Tecnologías Utilizadas
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **Vite**: Herramienta de construcción y desarrollo para proyectos frontend.
+- **useReducer**: Hook de React para manejar estados complejos del contador y su historial.
+- **useCallback**: Hook de React para optimizar funciones y evitar re-renderizados innecesarios.
+- **useRef**: Hook de React para interactuar con elementos del DOM (enfoque en botones e inputs).
+- **CSS3**: Estilos con colores llamativos, sombras y diseño responsive.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Uso
+1. **Valor personalizado**: Ingresa un número en el campo de entrada para definir el valor de incremento/decremento.
+2. **Incrementar/Decrementar**: Haz clic en los botones `+` o `-` para modificar el contador según el valor ingresado.
+3. **Deshacer/Rehacer**: Utiliza los botones "Deshacer" y "Rehacer" para navegar por el historial de cambios.
+4. **Reiniciar**: Presiona el botón "Reiniciar" para volver el contador a 0.
+5. **Borrar historial**: Usa el botón "Borrar Historial" para eliminar el historial de cambios, manteniendo el valor actual.
