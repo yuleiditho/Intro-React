@@ -1,0 +1,120 @@
+.citas-container {
+    background-color: #f9fafb;
+    min-height: 100vh;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.citas-content {
+    max-width: 56rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.citas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.citas-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.new-appointment-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.new-appointment-button:hover {
+    background-color: #2563eb;
+}
+
+.citas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cita-item {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f3f4f6;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.cita-item:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cita-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cita-info {
+    flex: 1;
+}
+
+.cita-date {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+.cita-patient {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-top: 0.25rem;
+}
+
+.cita-arrow {
+    color: #3b82f6;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.no-appointments {
+    text-align: center;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-appointments-text {
+    font-size: 1.125rem;
+    color: #4b5563;
+}
+
+.no-appointments-subtext {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-top: 0.5rem;
+}
